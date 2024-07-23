@@ -1,0 +1,57 @@
+body {
+    background-color: #24353F;
+    font-family: sans-serif;
+}
+h1 {
+    font-weight: 500;
+    font-size: 40px;
+}
+.logCard {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+input,
+textarea {
+    background-color: transparent !important;
+    color: #fff !important;
+}
+input::placeholder,
+textarea::placeholder {
+    color: rgb(182, 182, 182) !important;
+}
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 0 0 transparent !important;
+}
+textarea::marker{
+    background-color: #24353F !important;
+}
+.form-control {
+    background-color: #24353F;
+    color: white !important;
+}
+p {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+p a {
+    color: white;
+    text-decoration: none;
+}
+p a:hover {
+    text-decoration: underline;
+}
+.bg-body-tertiary {
+    background-color: #24353F !important;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+.navbar-brand {
+    color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link  {
+    color: rgba(255, 255, 255,0.5) !important;
+    font-weight: 500;
+}
+.welcome {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}

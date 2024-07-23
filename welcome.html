@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Welcome</title>
+  </head>
+  <body onload="displayWelcome ();">
+    <section class="vh-100 d-flex justify-content-center flex-column">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container w-75 px-4">
+              <a class="navbar-brand" href="#">SMART LOGIN</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <button onclick="logOut ();" class="btn btn-outline-warning text-secondary ms-auto px-2 py-2" type="submit">Logout</button>
+              </div>
+            </div>
+          </nav>
+          <div class="nameContainer my-auto d-flex justify-content-center align-items-center">
+            <div class="welcome p-5 text-center w-50">
+                <h1 id="userName" class="text-info opacity-75"></h1>
+            </div>
+          </div>
+          
+    </section>
+    
+    <script src="JS/index.js"></script>
+  </body>
+</html>

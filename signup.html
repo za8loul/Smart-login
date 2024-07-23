@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>SignUp</title>
+  </head>
+  <body>
+    <div
+      class="container text-center py-5 d-flex justify-content-center align-items-center flex-wrap"
+    >
+      <div class="logCard p-5 m-auto w-75">
+        <h1 class="pb-3 text-info opacity-75">Smart Login System</h1>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="signName"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            oninput=" validateEmail () ;"
+            type="email"
+            class="form-control mb-3"
+            id="signEmail"
+            placeholder="Enter your email"
+          />
+          <span id="validEmail" class="text-danger"></span>
+        </div>
+        <div class="mb-4">
+          <input
+            oninput="validatePassword ();"
+            type="password"
+            class="form-control"
+            id="signPass"
+            placeholder="Enter password"
+          />
+          <span id="validPass" class="text-danger"></span>
+        </div>
+        <button
+          id="signUpBtn"
+          onclick="signUp ();"
+          class="btn btn-outline-info opacity-75 py-2 px-5 w-100 mb-3"
+        >
+          Sign Up
+        </button>
+        <p>You have an account? <a href="index.html">Signin</a></p>
+      </div>
+    </div>
+    <script src="JS/index.js"></script>
+  </body>
+</html>

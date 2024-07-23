@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div
+      class="container text-center py-5 d-flex justify-content-center align-items-center flex-wrap"
+    >
+      <div class="logCard p-5 m-auto w-75">
+        <h1 class="pb-3 text-info opacity-75">Smart Login System</h1>
+        <div class="mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="logEmail"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="mb-4">
+          <input
+            type="password"
+            class="form-control mb-3"
+            id="logPass"
+            placeholder="Enter your password"
+          />
+          <span id="empty" class="text-danger"></span>
+          <span id="incorrect" class="text-danger"></span>
+          <span id="correct" class="text-success"></span>
+        </div>
+        <button
+          onclick="logIn ();"
+          id="loginBtn"
+          class="btn btn-outline-info opacity-75 py-2 px-5 w-100 mb-3"
+        >
+          Login
+        </button>
+        <p>Don’t have an account? <a href="signup.html">Sign Up</a></p>
+      </div>
+    </div>
+    <script src="JS/index.js"></script>
+  </body>
+</html>
